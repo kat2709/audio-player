@@ -1,0 +1,202 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 350px;
+  height: 450px;
+  margin: auto;
+}
+
+.audio-container {
+  box-shadow: 0 0 12px rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+}
+
+.image-box {
+  border-radius: 10px 10px 0px 0px;
+
+  text-align: center;
+  height: 300px;
+  overflow: hidden;
+}
+
+.images {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  transition: all 0.4s linear;
+}
+
+.image-scale {
+  transform: scale(1.05);
+}
+
+.player-box {
+  border-radius: 0px 0px 10px 10px;
+  height: 150px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(33, 34, 35, 1) 0%,
+    rgba(190, 192, 192, 1) 100%
+  );
+}
+
+.control-section {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title-song {
+  width: 200px;
+}
+
+.play-icon {
+  cursor: pointer;
+  background-image: url("folder/icons/play.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+}
+
+.pause {
+  background-image: url("folder/icons/pause.svg");
+}
+
+.singer {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(155, 238, 21);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.song {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.next-prev-btn button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.prev img {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.next img {
+  cursor: pointer;
+  margin-top: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.record-section {
+  padding: 0px 45px;
+}
+
+.song-duration {
+  text-align: right;
+  color: rgb(157, 255, 0);
+  font-weight: bold;
+}
+
+.record {
+  margin: 0px auto;
+  width: 250px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.record-progress {
+  background-color: rgb(157, 255, 0);
+  border-radius: 5px;
+  height: 5px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.current-song-time {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+footer {
+  margin: 0px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(1, 0, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 0, 6, 1) 0%,
+    rgba(157, 255, 0, 0.1) 0%,
+    rgba(138, 153, 153, 0.3) 100%
+  );
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+}
+
+.git-logo{
+  margin-left: 15px;
+}
+
+footer p{
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rs-logo {
+  width: 100px;
+}
+
+button:hover{
+  opacity: 0.5;
+}
